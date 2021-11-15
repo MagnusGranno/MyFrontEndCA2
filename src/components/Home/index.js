@@ -45,6 +45,7 @@ function Home({ loggedIn }) {
         {!loggedIn && (
           <div>
             <h1>Magnus Granno</h1>
+            <h3>Jeg er uvenner med github actions</h3>
             <h3>Login to use API's</h3>
           </div>
         )}
