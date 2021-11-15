@@ -10,21 +10,14 @@ function SideBar() {
   return (
     <Wrapper>
       <Content>
-        <h2>EndPoints</h2>
-        <Link to="/first">
-          <Navs>First Endpoint</Navs>
+        <Link to="/unis">
+          <Navs>Universities</Navs>
         </Link>
         <Link to="/users">
           <Navs>Users</Navs>
         </Link>
         <Link to="/chuck">
           <Navs>Chuck Norris Jokes</Navs>
-        </Link>
-        <Link to="/fourth">
-          <Navs>Fourth Endpoint</Navs>
-        </Link>
-        <Link to="/fifth">
-          <Navs>Fifth Endpoint</Navs>
         </Link>
       </Content>
     </Wrapper>

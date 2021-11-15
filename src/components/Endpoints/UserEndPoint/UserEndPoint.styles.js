@@ -9,6 +9,11 @@ export const MyBody = styled.div`
   height: 100vh;
   margin-top: -50px;
 
+  @media (max-width: 900px) {
+    margin-left: 0px;
+    ${({ checked }) => checked && 'margin-left: 200px;'}
+  }
+
   @media (max-width: 1300px) {
     margin-top: 0;
   }

@@ -21,11 +21,11 @@ function Header({ loggedIn, setLoggedIn, setLoginCredentials }) {
   return (
     <Wrapper>
       <Content>
-        <h1>StartCode</h1>
+        <h1>CA2 | Granno</h1>
         {loggedIn && (
           <h3>
-            🔥 Welcome {sessionStorage.username} your roles:{' '}
-            {sessionStorage.getItem('roles').split(',').join(', ')}🔥
+            Hello {sessionStorage.username} your roles:{' '}
+            {sessionStorage.getItem('roles').split(',').join(', ')}
           </h3>
         )}
         <Menu>

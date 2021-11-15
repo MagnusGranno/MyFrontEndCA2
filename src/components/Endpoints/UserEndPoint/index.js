@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // Styles
 import { MyBody, MyButton, UserTable } from './UserEndPoint.styles';
 
-const UserEndPoint = () => {
+const UserEndPoint = ({ checked }) => {
   const [users, setUsers] = useState([{}]);
   const [color, setColor] = useState(`rgb(127,2,241)`);
 
@@ -34,7 +34,7 @@ const UserEndPoint = () => {
   }, []);
 
   return (
-    <MyBody>
+    <MyBody checked={checked}>
       <UserTable color={color}>
         <thead>
           <tr>

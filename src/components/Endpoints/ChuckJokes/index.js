@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { chuckURL } from '../../../settings';
 
 // Styles
-import { MyBody, JokeButton } from './ChuckJokes.styles';
+import { MyBody, JokeButton, ResetButton } from './ChuckJokes.styles';
 
-const ChuckJokes = () => {
+const ChuckJokes = ({ checked }) => {
   const URL = chuckURL;
   const [jokes, setJokes] = useState([]);
 
@@ -30,7 +30,7 @@ const ChuckJokes = () => {
     setJokes([]);
   };
   return (
-    <MyBody>
+    <MyBody checked={checked}>
       <div>
         <h2>Chuck Norris Jokes</h2>
         <ul>
@@ -41,9 +41,7 @@ const ChuckJokes = () => {
       </div>
       <div>
         <JokeButton onClick={getMeMyJokes}>Get me my jokes</JokeButton>
-        <JokeButton onClick={resetPage} color={'red'}>
-          Reset Page
-        </JokeButton>
+        <ResetButton onClick={resetPage}>Reset Page</ResetButton>
       </div>
     </MyBody>
   );

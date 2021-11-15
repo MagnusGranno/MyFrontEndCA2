@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   position: sticky;
   z-index: 5;
+  border: 1px solid black;
 `;
 
 export const Content = styled.div`
